@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gillian Coppola - About Me</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      .parent-flex {
+        /* display: flex; */
+        background-color: #4d1507;
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin-bottom: 50px;
+        padding-bottom:25px;
+        padding-top:25px;
+      }
+
+      /* .parent-flex img {
+        width: 150px;
+        background-color: pink;
+        padding: 20px;
+      } */
+      .child-flex p {
+        background-color: rgb(77, 144, 146);
+        padding: 20px;
+        margin: 20px;
+        width: 60%;
+      }
+
+      .flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 300px;
+  border: 1px solid rgb(77, 144, 146);
+  perspective: 1000px; 
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="aboutme.html">About Me</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="music.html">Music</a></li>
+      
+      <li style="float: right">
+        <a target="_blank" href="https://www.instagram.com/kn0ts__/"
+          ><img
+            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+    </ul>
+
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1>About Me</h1>
+
+    <center>
+    <div class="parent-flex">
+     
+
+      <div class="flip-card child-flex">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/selfport.jpeg"
+      style="height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="https://content-management-files.canva.com/83ba78d4-a24d-49db-a4ae-3803e236593a/tools_transparent-background_promo-showcase_01-AFTER.jpg" style="width:260px;height:300px;">
+    </div>
+  </div>
+</div>
+
+      <!-- <div class="child-flex">
+        <img
+          src="images/HeartIcons.jpeg"
+        />
+      </div> -->
+      <div class="child-flex">
+        <p>
+          Gillian Coppola is an artist, writer, and musician from Brooklyn, New York. She is a LaGuardia High School graduate and will be pursuing a degree in Illustration at Pratt Institute. Her art has appeared in shows throughout her time in high school, including a dedicated Senior Show. 
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-flex">
+      <div class="child-flex">
+        <p>
+          Her writing has earned her two Gold Keys and a Silver Key in Scholastic Art & Writing competitions, and her short story "Live" won second place in the Brooklyn Public Library's Ned Vizzini Writing Contest.Her writing has earned her two Gold Keys and a Silver Key in Scholastic Art & Writing competitions, and her short story "Live" won second place in the Brooklyn Public Library's Ned Vizzini Writing Contest.
+        </p>
+      </div>
+     
+    </div>
+
+    <div class="parent-flex">
+      <div class="child-flex">
+        <p>
+          Gillian began teaching herself guitar at 17, then proceeded to get professional lessons and has since played at one recital and at the opening of an art show. She continues to practice every day and expand her breadth of songs as well as try new things with her songwriting in guitar and lyrics.
+        </p>
+      </div>
+     
+    </div>
+  </center>
+  </body>
+</html>
